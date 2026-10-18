@@ -34,4 +34,4 @@ jobs:
       - name: Install package
         run: python -m pip install -e ".[dev,sim]"
       - name: Run tests
-        run: python -m pytest -q
+        run: python -m pytest -q --durations=15
